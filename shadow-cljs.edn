@@ -1,0 +1,8 @@
+{:source-paths ["src"]
+ :builds
+ {:script
+  {:target :esm
+   :runtime :custom
+   :output-dir "out"
+   :js-options {:keep-as-import #{"term-size" "ink-spinner"}}
+   :modules {:script {:init-fn main/run}}}}}
